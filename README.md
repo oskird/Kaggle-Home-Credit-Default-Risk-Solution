@@ -12,15 +12,15 @@ Solution for Kaggle competition - [Home Credit Default Risk](https://www.kaggle.
 ## Strategy
 **Feature Extraction**: 1) generate features manually from each table; 2) create trend features with *featuretools* API; 3) use clustering techniques (Gussian Mixture Model and K-means) to extract features from bureau and previous_application table
 
-**Baseline model**: use LightGBM to test different feature combinations
+**Baseline model**: use LightGBM as the baseline model to test different feature combinations
 
-**Parameter Tuning**: human intuition to target the parameters at a 'narrow' range; Bayes Optimization to get a more accurate parameter combination
+**Parameter Tuning**: human intuition to target at a 'narrow' range; Bayes Optimization to get a more accurate parameter combination
 
-**Model Stacking**: Level 1: 3 LightGBM model, 2 XGBoost model, 1 Random Forest model and 1 Artificial Neural Network; Level 2: Artificial Neural Network 
+**Model Stacking**: Level 1: 3 LightGBM models, 2 XGBoost models, 1 Random Forest model and 1 Artificial Neural Network; Level 2: Artificial Neural Network 
 
 ## Files in this repository
 ### Feature
-**feature - bureau & bureau balance.py**: feature extraction from bureau and bureau_balance table
+**feature - bureau & bureau_balance.py**: feature extraction from bureau and bureau_balance table
 
 **feature - credit_card_balance.py**: feature extraction from credit_card_balance table
 
