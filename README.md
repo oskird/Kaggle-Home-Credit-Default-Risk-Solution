@@ -1,5 +1,5 @@
 # Home-Credit-Default-Risk
-Solution for Kaggle competition - [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk)
+Sliver Solution (Top 3%) for Kaggle competition - [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk)
 
 **Public kernel on Kaggle** 
 
