@@ -11,7 +11,7 @@ from sklearn.model_selection import StratifiedKFold
 trail = None
 
 # baseline model
-# should import **train set as X**, *train label as y*, **test set as X_pred** 
+# should import train set as X, train label as y, test set as X_pred 
 folds = StratifiedKFold(n_splits=5, random_state=6)
 oof_preds = np.zeros(X.shape[0])
 sub_preds = np.zeros(X_pred.shape[0])
