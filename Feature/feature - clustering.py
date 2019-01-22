@@ -22,8 +22,6 @@ gmm = GaussianMixture(n_components=2, verbose=5, max_iter=100, init_params='kmea
 gmm.fit(X)
 group_prob = gmm.predict_proba(X)
 group_prob = np.round(group_prob, decimals=2)
-Initialization 0
-Initialization converged: True	 time lapse 8.02643s	 ll 10.86948
 bur_cluster = pd.concat([bureau[['SK_ID_CURR', 'SK_ID_BUREAU']], pd.DataFrame({'cluster':group_prob[:, 0]})], axis=1)
 bur_cluster = bur_cluster.groupby('SK_ID_CURR')['cluster'].mean().reset_index()
 bur_cluster.to_csv('bur_cluster.csv', index=False)
